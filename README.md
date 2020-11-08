@@ -9,7 +9,7 @@
 -   [介绍](#介绍)
 -   [安装](#安装)
 -   [使用](#使用)
-    -   [开启插件](#开启插件)
+    -   [启用插件](#启用插件)
     -   [配置方式](#配置方式)
     -   [使用说明](#使用说明)
 -   [示例](#示例)
@@ -23,7 +23,7 @@
 
 ## 介绍
 
-在对外提供 Web 服务时，可能在线上环境出现偶发性的错误，为了方便排查问题，给所有的响应都提供一个**唯一请求ID**是一个不错的实践，开发者可以根据这个请求ID去相关日志中找寻对应的错误内容。
+在对外提供 Web 服务时，可能在线上环境出现偶发性的错误，为了方便排查问题，给所有的请求都提供一个**唯一请求ID**是一个不错的实践，开发者可以根据这个请求ID去相关日志中找寻对应的错误内容。
 
 
 
@@ -31,13 +31,13 @@
 
 
 
-本插件完美适配 **Egg.js** 框架，只需要按照框架要求开启插件，可以**零配置**使用。（本插件需要搭配）
+本插件完美适配 **Egg.js** 框架，只需要按照框架要求启用插件，可以**零配置**使用。
 
 
 
 ## 安装
 
-按照通俗的方式使用 npm 下载安装到你的项目下即可，无需全局安装。
+按照通用的方式使用 npm 下载安装到你的项目下即可，无需全局安装。
 
 
 
@@ -53,17 +53,21 @@ npm i egg-apigw-tracer
 
 ## 使用
 
-在使用前，请确保你已经阅读 Egg.js 框架关于**插件**的文档（文档地址：https://eggjs.org/zh-cn/basics/plugin.html）。下面说明如何配置以及使用插件。
+在使用前，请确保你已经阅读 Egg.js 框架关于**插件**的[文档](https://eggjs.org/zh-cn/basics/plugin.html)。
 
 
 
-### 开启插件
+下面说明如何配置以及使用插件。
 
-在 `config/plugin.js` 文件中中声明开启插件：
+
+
+### 启用插件
+
+在 `config/plugin.js` 文件中中声明启用插件：
 
 ```js
 exports.tracer = {
-  // enable 属性表示是否开启插件，true 为开启，false 为关闭
+  // enable 属性表示是否启用插件，true 为启用，false 为禁用
   enable: true,
 
   // 指定插件使用的包，为 'egg-apigw-tracer'
@@ -100,7 +104,7 @@ exports.tracer = {
 
 ### 使用说明
 
-主要有 2 处使用场景，一是你可以直接通过 `ctx.traceId` 获取示踪ID，二是你使用 `ctx.logger` 打印日志时，框架会自动在日志前附上示踪ID，前缀格式为：`[$userId/$ip/$traceId/${cost}ms $method $url]` ，详情见文档：https://eggjs.org/zh-cn/core/logger.html
+主要有 2 处使用场景，一是你可以直接通过 `ctx.traceId` 获取示踪ID，二是你使用 `ctx.logger` 打印日志时，框架会自动在日志前附上示踪ID，前缀格式为：`[$userId/$ip/$traceId/${cost}ms $method $url]` ，详情见 [文档](https://eggjs.org/zh-cn/core/logger.html#如何打印日志) 。
 
 
 
@@ -112,7 +116,7 @@ exports.tracer = {
 
 
 
-在 `config/plugin.js` 文件中中声明开启插件：
+在 `config/plugin.js` 文件中中声明启用插件：
 
 ```js
 exports.tracer = {
@@ -163,9 +167,10 @@ exports.tracer = {
 如果你有任何问题或者建议，欢迎联系我，以下是我的联系方式：
 
 -   邮箱：inlym@qq.com
+-   主页：www.inlym.com
 
 
 
 ## 许可证
 
- 本插件使用 [MIT](https://github.com/inlym/egg-apigw-tracer/blob/master/LICENSE) 许可证。
+本插件使用 [MIT](LICENSE) 许可证。
