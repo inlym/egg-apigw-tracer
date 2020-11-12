@@ -1,5 +1,9 @@
 # egg-apigw-tracer
 
+
+[![npm version](https://img.shields.io/npm/v/egg-apigw-tracer)](https://www.npmjs.com/package/egg-apigw-tracer)  [![MIT](https://img.shields.io/npm/l/egg-apigw-tracer)](https://github.com/inlym/egg-apigw-tracer/blob/master/LICENSE)  [![npm](https://img.shields.io/npm/dw/egg-apigw-tracer)](https://www.npmjs.com/package/egg-apigw-tracer)  [![star](https://gitee.com/inlym/egg-apigw-tracer/badge/star.svg?theme=dark)](https://gitee.com/inlym/egg-apigw-tracer/stargazers)  
+
+
 ![egg-apigw-tracer-image](https://img.inlym.com/dca8bebe5e534bfa87b52f42e7be282c.png)
 
 
@@ -19,6 +23,7 @@
 -   [示例](#示例)
 -   [相关](#相关)
 -   [作者](#作者)
+-   [参与](#参与)
 -   [许可证](#许可证)
 
 
