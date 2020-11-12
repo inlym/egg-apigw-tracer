@@ -1,5 +1,9 @@
 # egg-apigw-tracer
 
+![egg-apigw-tracer-image](https://img.inlym.com/dca8bebe5e534bfa87b52f42e7be282c.png)
+
+
+
 适配 API 网关的 HTTP 请求示踪器，用于 Egg.js 框架。
 
 
@@ -167,7 +171,18 @@ exports.tracer = {
 如果你有任何问题或者建议，欢迎联系我，以下是我的联系方式：
 
 -   邮箱：inlym@qq.com
--   主页：www.inlym.com
+-   主页：[www.inlym.com](https://www.inlym.com)
+
+
+
+## 参与
+
+非常欢迎你能够参与这个项目的开发和维护。
+
+你可以通过以下几种方式参与到项目中：
+
+1.  提建议和需求。对于几句话就能说清楚的建议和需求，你可以直接 提一个 [New Issue](https://github.com/inlym/egg-apigw-tracer/issues/new) 。
+2.  直接 Fork 整个项目，改完后提交合并请求。（提交前请检查务必通过 ESLint 检查）
 
 
 
