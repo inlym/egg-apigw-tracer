@@ -1,7 +1,7 @@
 # egg-apigw-tracer
 
 
-[![npm version](https://img.shields.io/npm/v/egg-apigw-tracer)](https://www.npmjs.com/package/egg-apigw-tracer)  [![MIT](https://img.shields.io/npm/l/egg-apigw-tracer)](https://github.com/inlym/egg-apigw-tracer/blob/master/LICENSE)  [![npm](https://img.shields.io/npm/dw/egg-apigw-tracer)](https://www.npmjs.com/package/egg-apigw-tracer)  [![star](https://gitee.com/inlym/egg-apigw-tracer/badge/star.svg?theme=dark)](https://gitee.com/inlym/egg-apigw-tracer/stargazers)  
+[![npm version](https://img.shields.io/npm/v/egg-apigw-tracer)](https://www.npmjs.com/package/egg-apigw-tracer)  [![MIT](https://img.shields.io/npm/l/egg-apigw-tracer)](https://github.com/inlym/egg-apigw-tracer/blob/master/LICENSE)  [![npm](https://img.shields.io/npm/dw/egg-apigw-tracer)](https://www.npmjs.com/package/egg-apigw-tracer)  [![star](https://gitee.com/inlym/egg-apigw-tracer/badge/star.svg?theme=dark)](https://gitee.com/inlym/egg-apigw-tracer/stargazers)
 
 
 ![egg-apigw-tracer-image](https://img.inlym.com/dca8bebe5e534bfa87b52f42e7be282c.png)
@@ -28,11 +28,9 @@
 
 
 
-
-
 ## 介绍
 
-在对外提供 Web 服务时，可能在线上环境出现偶发性的错误，为了方便排查问题，给所有的请求都提供一个**唯一请求ID**是一个不错的实践，开发者可以根据这个请求ID去相关日志中找寻对应的错误内容。
+在对外提供 Web 服务时，可能在线上环境出现偶发性的错误，为了方便排查问题，给所有的请求都提供一个 **唯一请求ID** 是一个不错的实践，开发者可以根据这个请求ID去相关日志中找寻对应的错误内容。
 
 
 
@@ -62,7 +60,7 @@ npm i egg-apigw-tracer
 
 ## 使用
 
-在使用前，请确保你已经阅读 Egg.js 框架关于**插件**的[文档](https://eggjs.org/zh-cn/basics/plugin.html)。
+在使用前，请确保你已经阅读 Egg.js 框架关于**插件**的 [文档](https://eggjs.org/zh-cn/basics/plugin.html) 。
 
 
 
@@ -76,10 +74,10 @@ npm i egg-apigw-tracer
 
 ```js
 exports.tracer = {
-  // enable 属性表示是否启用插件，true 为启用，false 为禁用
+  /** 是否启用插件，true 为启用，false 为禁用 */
   enable: true,
 
-  // 指定插件使用的包，为 'egg-apigw-tracer'
+  /** 指定插件使用的包，为 'egg-apigw-tracer' */
   package: 'egg-apigw-tracer',
 };
 ```
@@ -94,7 +92,7 @@ exports.tracer = {
 
 
 
-在 `config/config.${env}.js`文件配置插件的使用方式（以下为默认配置）：
+在 `config/config.${env}.js` 文件配置插件的使用方式（以下为默认配置）：
 
 ```js
 exports.tracer = {
@@ -156,14 +154,13 @@ exports.tracer = {
 
 
 
-
-
 ## 相关
 
--   [egg-aliyun-tablestore](https://github.com/inlym/egg-aliyun-tablestore)   ——  （推荐）阿里云表格存储（Tablestore）插件，用于 Egg.js 框架
--   [egg-load](https://github.com/inlym/egg-load)   ——  （推荐）自动装载第三方模块至 Egg.js 框架上
--   [egg-user](https://github.com/inlym/egg-user)  ——  （推荐）用户登录、退出登录等状态管理插件，用于 Egg.js 框架
--   [egg-miniprogram](https://github.com/inlym/egg-miniprogram)  ——  （推荐）微信小程序服务端工具集，用于 Egg.js 框架
+以下是作者开发的 Egg.js 框架的插件系列，已用于作者的生产项目中，推荐使用。
+-   [egg-apigw-tracer](https://github.com/inlym/egg-apigw-tracer) - ⚡ 适配 API 网关的 HTTP 请求示踪器，用于 Egg.js 框架
+-   [egg-aliyun-tablestore](https://github.com/inlym/egg-aliyun-tablestore) - 🚚 阿里云表格存储（Tablestore）插件，用于 Egg.js 框架
+-   [egg-load](https://github.com/inlym/egg-load) - 🚀 自动挂载第三方模块至 Egg.js 框架上
+
 
 
 
@@ -187,7 +184,7 @@ exports.tracer = {
 你可以通过以下几种方式参与到项目中：
 
 1.  提建议和需求。对于几句话就能说清楚的建议和需求，你可以直接 提一个 [New Issue](https://github.com/inlym/egg-apigw-tracer/issues/new) 。
-2.  直接 Fork 整个项目，改完后提交合并请求。（提交前请检查务必通过 ESLint 检查）
+2.  Fork 项目，修改代码，然后提交 Pull requests 。（提交前请检查务必通过 ESLint 检查）
 
 
 
