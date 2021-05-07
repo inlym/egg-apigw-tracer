@@ -1,6 +1,6 @@
 {
   "name": "egg-apigw-tracer",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "适配 API 网关的 HTTP 请求示踪器，用于 Egg.js 框架",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/inlym/egg-apigw-tracer#readme",
   "dependencies": {
-    "uuid": "^8.3.1"
+    "uuid": "^8.3.2"
   },
   "eggPlugin": {
     "name": "tracer"
